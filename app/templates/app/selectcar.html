@@ -1,0 +1,32 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Map{% endblock title %}
+{% block main-content %}
+<div class="catagories" style="background-color: #ffd6d6;">
+    <div class="small-container" >
+        <h2 class="title">Select Ride</h2>
+        <div class="row ">
+            <div class="col-3">
+              <a href="{% url 'booking' %}"><img src="{% static 'app/images/Airport pickup and drop services Goa2.png' %}"></a>
+              <br><br>
+              <b>PRIME</b>
+            </div>
+            <div class="col-3">
+              <a href="{% url 'booking' %}"><img src="{% static 'app/images/Airport pickup and drop services Goa2.png' %}"></a>
+              <br><br>
+              <b>SEDAN</b>
+            </div>
+            <div class="col-3">
+              <a href="{% url 'booking' %}"><img src="{% static 'app/images/Airport pickup and drop services Goa2.png' %}"></a>
+              <br><br>
+              <b>MINI</b>
+            </div>
+            <div class="col-3">
+              <a href="{% url 'booking' %}"><img  src="{% static 'app/images/Airport pickup and drop services Goa2.png' %}"></a>
+              <br><br>
+              <b>ULTRA</b>
+          </div>
+        </div>
+    </div>
+  </div>
+{% endblock main-content %}

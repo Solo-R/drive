@@ -1,0 +1,46 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Map{% endblock title %}
+{% block main-content %}
+<br>
+<div class="container">
+    <div class="row text-center p-5 text-white border-bottom shadow" style="background-color: #ffd6d6;">
+      <h1 style="color: #ff9587;">24X7 AVAILABLE</h1>
+      <span style="color: #ff9587;">Call: [XXX XXX XXXX], [XXX XXX XXXX]</span>
+      <small class="fw-lighter" style="color: black;">CUSTOMER IS OUR KING WE DO NOT BARGENING</small>
+    </div>
+  </div> 
+  <br>
+<div class="contaner" style="border: #ff9587;">
+  <div class="container">
+    <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3368.81681032003!2d72.87594890915277!3d19.27051581138821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b128207b1c5d%3A0xb60d699460fc0b44!2sSharmuddin%20tours%20and%20travels!5e0!3m2!1sen!2sin!4v1660713573205!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container my-5">
+    <div class="row">
+     <div class="col-sm">
+      <div class="card mb-3">
+        <div class="card-body bg-dark" style="background-color: #ffd6d6">
+          <br><br><br>
+          <a href="{% url 'customerregistration' %}"><p class="text-center font-italic" style="font-size: 50px;">---<b>Register Now</b>---></p></a>
+          <br><br><br>
+        </div>
+      </div>
+     </div>
+     <div class="col-sm">
+      <div class="card mb-3">
+        <div class="card-body bg-dark" style="background-color: #ffd6d6">
+          <br><br><br>
+          <a href="tel:91 9029999837"><p class="text-center font-italic" style="font-size: 50px;">---<b>Call Now</b>---></p></a>
+          <br><br><br>
+        </div>
+      </div>
+     </div>
+    </div>
+   </div>
+{% endblock main-content %}
